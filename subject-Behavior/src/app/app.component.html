@@ -1,0 +1,15 @@
+Your text: <input type='text' [(ngModel)]='userText'/>
+<br/><br/>
+<simple [simpleInput]='userText'></simple>
+
+<div style="text-align: center;">
+    <h1>
+     {{ message }}
+    </h1>
+</div>
+<!-- <app-test (childEvent)="message=$event" [parentData]="name"></app-test> -->
+<app-test [roleData]="role" (selectedClick)="message=$event"></app-test>
+<!-- 
+<app-hero-parent></app-hero-parent> -->
+
+<p *ngIf="testActivated">Activated</p>

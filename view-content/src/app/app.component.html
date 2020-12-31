@@ -1,0 +1,110 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p #pRef>Add new Servers or blueprints!</p>
+      <label>Server Name</label>
+      <input type="text" #nameRef class="form-control" [(ngModel)]="newServerName">
+      <label>Server Content</label>
+      <input type="text" class="form-control" [(ngModel)]="newServerContent">
+      <br>
+      <button
+        class="btn btn-primary"
+        (click)="onAddServer()">Add Server</button>
+      <button
+        class="btn btn-primary"
+        (click)="onAddBlueprint()">Add Server Blueprint</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <div
+        class="panel panel-default"
+        *ngFor="let element of serverElements">
+        <div class="panel-heading">{{ element.name }}</div>
+        <div class="panel-body">
+          <p>
+            <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<hello name="SignUp Form">
+	<label>Name:</label>
+	<div>
+		<input type="text" [(ngModel)]="userName">
+	</div>
+	<label>New Password:</label>
+	<div>
+		<input type="password" [(ngModel)]="userName">
+	</div>
+	<label>Confirm Password:</label>
+	<div>
+		<input type="password" [(ngModel)]="userName">
+	</div>
+</hello>
+
+<hello name="Login Form">
+  <div card-body >
+    <label>Name:</label>
+    <div>
+     <input type="text" #child1 [(ngModel)]="userName">
+    </div>
+    <label>Password:</label>
+    <div>
+      <input type="password" [(ngModel)]="userName">
+    </div>
+  </div>
+</hello>
+
+<h3>
+  Ng content with select attribute
+</h3>
+<hello>
+  <div card-body1>
+    Hello 2
+  </div>
+</hello>
+
+<h3>
+  Ng content with select attribute and value
+</h3>
+<hello>
+  <div card-body2="hello2">
+    Hello 3
+  </div>
+</hello>
+
+<h3>
+	Ng content with select attaribute and value
+</h3>
+<hello>
+	<div class="new-hello">
+		Hello4
+	</div>
+</hello>
+
+<h3>
+	Ng content multiple attributes
+</h3>
+<hello>
+
+	<div attr1 attr2>
+		Hello5
+	</div>
+</hello>
+
+<h3>
+	Ng content multiple classes
+</h3>
+<hello>
+
+	<div class="class1 class2">
+		Hello6
+	</div>
+</hello>
+
