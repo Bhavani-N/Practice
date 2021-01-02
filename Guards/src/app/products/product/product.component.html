@@ -1,0 +1,22 @@
+<!-- Product2 the component itself appears after some delay. 
+That is because it waits for the resolver to finish. 
+The Component renders along with the data. -->
+<h1> With Resolve</h1>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products;">
+                <td><a [routerLink]="['/product', product.productID]">{{product.name}}</a> </td>
+                <td>{{product.price}}</td>
+                <td><a [routerLink]="['/product/view', product.productID]">view</a></td>
+                <td><a [routerLink]="['/product/edit', product.productID]">edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
