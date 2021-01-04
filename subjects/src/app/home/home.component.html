@@ -1,0 +1,8 @@
+<div class="row">
+    user Name: <strong>{{ userName }}</strong> 
+    <br><br>
+    <input type="text" placeholder="update Name" #uname> <br><br>
+    <button (click)="updateUserName(uname)">Update Name</button>
+    <button (click)="sendMessage()">Send Message</button>
+    <button (click)="clearMessage()">Clear Message</button>
+</div>
